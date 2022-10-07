@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<div class='container-fluid'>
+
+			<table class='table table-bordered'>
+			<!-- 1. 약도 노드 -->
+			<div id="daumRoughmapContainer1656908259323"
+				class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+			<!-- 2. 설치 스크립트 -->
+			<script charset="UTF-8" class="daum_roughmap_loader_script"
+				src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+			<!-- 3. 실행 스크립트 -->
+			<script charset="UTF-8">
+				new daum.roughmap.Lander({
+					"timestamp" : "1656908259323",
+					"key" : "2att5",
+					"mapWidth" : "350",
+					"mapHeight" : "200"
+				}).render();
+			</script>
+			</table>
+	
+	</div>
+</body>
+</html>
